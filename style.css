@@ -24,6 +24,21 @@ body{
     box-shadow:0 5px 10px rgb(0,0,0,0.1) ;
     position: relative;
 }
+.profile-card {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .profile-card::before{
     content: " ";
     position: absolute;
